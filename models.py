@@ -59,8 +59,8 @@ class ADIData(BaseModel):
     machine_id: str = Field(..., description="Unique machine identifier")
     serial_number: str = Field(..., description="Device serial number")
     device_name: str = Field(..., description="Human-readable device name")
-    locale: str = Field(default="en_US", description="Device locale")
-    timezone: str = Field(default="UTC", description="Device timezone")
+    locale: str = Field(default="zh_CN", description="Device locale")
+    timezone: str = Field(default="Asia/Shanghai", description="Device timezone")
     encrypted_data: str = Field(..., description="Encrypted ADI payload")
 
     class Config:
@@ -71,8 +71,8 @@ class ADIData(BaseModel):
                 "machine_id": "ABC123DEF456",
                 "serial_number": "ABC123DEF456",
                 "device_name": "iPhone",
-                "locale": "en_US",
-                "timezone": "UTC",
+                "locale": "zh_CN",
+                "timezone": "Asia/Shanghai",
                 "encrypted_data": "base64_encoded_encrypted_payload",
             }
         }

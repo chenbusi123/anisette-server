@@ -176,8 +176,8 @@ class ProvisioningManager:
             machine_id=machine_id,
             serial_number=machine_id,
             device_name=f"{device_class}",
-            locale="en_US",
-            timezone="UTC",
+            locale="zh_CN",
+            timezone="Asia/Shanghai",
             encrypted_data=self._generate_encrypted_adi(machine_id),
         )
 
